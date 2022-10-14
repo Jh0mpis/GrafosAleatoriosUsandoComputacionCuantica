@@ -1,3 +1,9 @@
-# GrafosAleatoriosUsandoComputacionCuantica
+# Grafos Aleatorios Usando Computación Cuántica
 
-Team Gatos Salvajes
+En el presente proyecto se llevará a cabo una revisión...
+
+## Team Gatos Salvajes, Integrantes:
+	-Fabian Quevedo
+	-Jhon Moreno
+	-Carlos Ramos
+	-Alejandro Yepes
