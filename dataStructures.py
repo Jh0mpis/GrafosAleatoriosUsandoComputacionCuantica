@@ -223,12 +223,64 @@ class DoubleLinkedList:
         self.tail = None
 
 
+class Stack:
+    def __init__(self):
+        self.top = None
+    
+    def isEmpty(self):
+        return self.top == None
+
+    def push(self, item):
+        if(self.isEmpty()):
+            self.top = Node(item)
+        else:
+            node = Node(item)
+            node.next  = self.top
+            self.top = node
+    
+    def pop(self):
+        if(not self.isEmpty()):
+            data = self.top.data
+            self.top = self.top.next
+            return data
+        else:
+            raise Exception("Empty Stack")
+    
+    def clear(self):
+        self.top = None
+
+
+class Queue:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+    
+    def isEmpty(self):
+        return self.head == None
+
+    def enqueue(self, item):
+        if(self.isEmpty()):
+            self.head = Node(item)
+            self.tail = self.head
+        else:
+            self.tail.next = Node(item)
+            self.tail = self.tail.next
+    
+    def dequeue(self):
+        if(not self.isEmpty()):
+            data = self.head.data
+            if(self.head == self.tail):
+                self.tail, self.head = None, None
+            else:
+                self.head = self.head.next
+            return data
+        else:
+            raise Exception("Empty Stack")
+    
+    def clear(self):
+        self.tail, self.head = None, None
+
+
 class BinaryThree:
     def __init__(self):
         root = None
-
-a= DoubleLinkedList()
-for i in range(5):
-    a.pushBack(i)
-n=a.getNode(2) 
-print(n.right.data)
