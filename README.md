@@ -7,3 +7,5 @@ En el presente proyecto se llevará a cabo una revisión...
 	-Jhon Moreno
 	-Carlos Ramos
 	-Alejandro Yepes
+## Referencias:
+https://arxiv.org/pdf/2008.03639.pdf
