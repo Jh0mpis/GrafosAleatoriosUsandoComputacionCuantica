@@ -1,1 +1,3 @@
 # GrafosAleatoriosUsandoComputacionCuantica
+
+Team Gatos Salvajes
