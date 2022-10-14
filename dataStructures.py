@@ -3,10 +3,18 @@ class DoubleNode:
         self.data = item
         self.left, self.right = None, None
 
+
 class Node:
     def __init__(self,item):
         self.data = item
         self.next = None
+
+
+class NNode:
+    def __init__(self,data):
+        self.data = data
+        self.nodes = []
+
 
 class LinkedList:
     def __init__(self):
