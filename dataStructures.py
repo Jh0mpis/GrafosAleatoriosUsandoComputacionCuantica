@@ -1,3 +1,4 @@
+from inspect import stack
 from sympy import root
 
 
@@ -296,9 +297,10 @@ class Queue:
         self.tail, self.head = None, None
 
 
-class BinaryThree:
+class BinaryTree:
     def __init__(self):
         self.root = None
+        self.__path = Stack()
 
     def addKey(self,key):
         newNode = DoubleNode(key)
@@ -307,6 +309,7 @@ class BinaryThree:
         else:
             queue = Queue()
             queue.enqueue(self.root)
+            count = 0
             while(not queue.isEmpty()):
                 current = queue.dequeue()
                 if(current.left == None):
@@ -317,6 +320,7 @@ class BinaryThree:
                     break
                 else: 
                     queue.superEnqueue(current.left, current.right)
+                count += 1
 
     def preOrder(self):
         queue = Queue()
