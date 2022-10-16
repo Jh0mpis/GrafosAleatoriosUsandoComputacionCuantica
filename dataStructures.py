@@ -1,3 +1,6 @@
+from sympy import root
+
+
 class DoubleNode:
     def __init__(self,item):
         self.data = item
@@ -273,6 +276,10 @@ class Queue:
         else:
             self.tail.next = Node(item)
             self.tail = self.tail.next
+        
+    def superEnqueue(self, *args):
+        for i in args:
+            self.enqueue(i)
     
     def dequeue(self):
         if(not self.isEmpty()):
@@ -291,4 +298,33 @@ class Queue:
 
 class BinaryThree:
     def __init__(self):
-        root = None
+        self.root = None
+
+    def addKey(self,key):
+        newNode = DoubleNode(key)
+        if self.root == None:
+            self.root = newNode
+        else:
+            queue = Queue()
+            queue.enqueue(self.root)
+            while(not queue.isEmpty()):
+                current = queue.dequeue()
+                if(current.left == None):
+                    current.left = newNode
+                    break
+                elif(current.right == None):
+                    current.right = newNode
+                    break
+                else: 
+                    queue.superEnqueue(current.left, current.right)
+
+    def preOrder(self):
+        queue = Queue()
+        queue.enqueue(self.root)
+        while(not queue.isEmpty()):
+            current = queue.dequeue()
+            print(current.data)
+            if(current.left != None):
+                queue.enqueue(current.left)
+            if(current.right != None):
+                queue.enqueue(current.right)
