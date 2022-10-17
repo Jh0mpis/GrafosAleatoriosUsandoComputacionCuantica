@@ -2,7 +2,7 @@
 
 Los grafos son una estructura algebraica comúnmente estudiados en la teoría que lleva el mismo nombre, dichas estructuras hacen parte fundamental de carreras como matemáticas, ciencias de la computación, ingeniería en sistemas, entre otros; adicionalmente, encuentran aplicaciones en la física estadística, química farmaceútica, criptografía pero principalmente en las ciencias de la computación nuevamente. En el presente proyecto se realiza un estudio e interpretación con mecánica cuántica de una clase particular de grafos denominadas grafos aleatorios, dicha interpretación permite entonces el computo de los mismos a través de los circuitos cuánticos permitiendo así la construcción de diversas aplicaciones.
 
-Revisar NotebookPrincipalGrafosCuanticos.ipynb para ver el Proyecto en general
+Revisar NotebookPrincipalGrafosCuanticos.ipynb para ver el proyecto completo de manera general.
 
 ## Team Gatos Salvajes, Integrantes:
 	-Moreno Triana, Jhon S.
