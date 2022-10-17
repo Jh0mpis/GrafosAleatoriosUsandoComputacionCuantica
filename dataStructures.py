@@ -1,7 +1,3 @@
-from inspect import stack
-from sympy import root
-
-
 class DoubleNode:
     def __init__(self,item):
         self.data = item
