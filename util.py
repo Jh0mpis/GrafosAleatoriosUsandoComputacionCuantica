@@ -1,6 +1,7 @@
 import random as rand
 from dataStructures import BinaryTree, Queue, DoubleNode
 import matplotlib.pyplot as mp
+from qiskit import QuantumCircuit
 
 def ROT(n,word):
     newWord=""
@@ -55,3 +56,42 @@ def ROTTree(word,tree):
         path.append(current.data)
         newWord += ROT(current.data,i)
     return newWord,path
+
+def binaryAbecedary():
+    abecedaryBinary =[]
+    for i in range(26):
+        string = format(i,"b")
+        abecedaryBinary.append("0"*(5-len(string))+string)
+    return abecedaryBinary
+
+def stringToBinary(word):
+    abecedary = "abcdefghijklmnopqrstuvwxyz"
+    abecedaryBinary = binaryAbecedary()
+    newWord = []
+    for i in word:
+        newWord.append(abecedaryBinary[abecedary.index(i)])
+    return newWord
+
+def binaryToString(binary):
+    abecedaryBinary = binaryAbecedary()
+    abecedary = "abcdefghijklmnopqrstuvwxyz"
+    word = ""
+    for i in binary:
+        word += abecedary[abecedaryBinary.index(i)]
+    return word
+
+def prepareCircuit(binary):
+    circuit = QuantumCircuit(5,5)
+    for i in range(len(binary)):
+        if(binary[i]=="1"):
+            circuit.x(i)
+    circuit.barrier()
+    circuit.h(range(5))
+    circuit.measure(range(5),range(5))
+    return circuit
+
+def binToInt(string):
+    num = 0
+    for i in range(len(string)):
+        num += (2**i)*int(string[len(string)-i-1])
+    return num
