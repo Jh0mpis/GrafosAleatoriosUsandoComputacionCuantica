@@ -4,7 +4,17 @@ Los grafos son una estructura algebraica comúnmente estudiados en la teoría qu
 
 Revisar NotebookPrincipalGrafosCuanticos.ipynb para ver el proyecto completo de manera general.
 
-## Team Gatos Salvajes, Integrantes:
+Proyecto ganador del tercer lugar en el Hackathon realizado en el Quantum Fall Fest QColombia 2022, ceremonia de clausura: https://youtu.be/ATqkt6oNeh8.
+
+# Random Graphs Using Quantum computing
+
+Graphs are algebraic structures wich are studied in the theory with the same name, these structures are a fundamental part of courses like mathemathics, computing science, systems engineering, etc; additionally, it has applications in statistics physics, pharmaceutical chemistry, criptography but especially in computing science. In this project, we make a study and interpretation with quantum mechanics to a particular class of graphs named random graphs, this interpretation allow us to compute the random graphs through quantum circuits thus allowing the construction of various applications.
+
+Check EngPrincipalNotebook.ipynb to read the complete project in general.
+
+This project was the winner of the third place in the Quantum Fall Fest QColombia 2022 Hackathon, closing ceremony: https://youtu.be/ATqkt6oNeh8.
+
+## Team Gatos Salvajes, Integrantes/Members:
 	-Moreno Triana, Jhon S.
 	-Quevedo Farieta, Fabian F.
 	-Ramos Salas, Carlos J.
