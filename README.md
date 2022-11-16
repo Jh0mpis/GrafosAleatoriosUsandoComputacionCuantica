@@ -19,5 +19,6 @@ This project was the winner of the third place in the Quantum Fall Fest QColombi
 	-Quevedo Farieta, Fabian F.
 	-Ramos Salas, Carlos J.
 	-Yepes Peñaranda, Alejandro J.
-## Referencias:
+## Referencias/References:
 - Xia, Feng & Liu, Jiaying & Nie, Hansong & Fu, Yonghao & Wan, Liangtian & Kong, Xiangjie. (2019). Random Walks: A Review of Algorithms and Applications. IEEE Transactions on Emerging Topics in Computational Intelligence. PP. 1-13. 10.1109/TETCI.2019.2952908. https://arxiv.org/pdf/2008.03639.pdf.
+- Hayashi, M., & Morimae, T. (2015). Verifiable measurement-only blind quantum computing with stabilizer testing. Physical review letters, 115(22), 220502. https://arxiv.org/abs/1505.07535
